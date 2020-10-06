@@ -3,11 +3,36 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-html {
+* {
+	box-sizing: border-box;
+}
+
+/* Taken from https://www.w3schools.com/css/css_rwd_grid.asp */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+/* Taken from https://www.w3schools.com/css/css_rwd_grid.asp */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.page {
 	background-image: url("images/GeorgianBay.JPG");
-	position: relative;
 	background-repeat: no-repeat;
-	background-size: 1920px 1280px;
+	background-size: cover;
+	height: 900px;
 	margin: auto;
 }
 .maintitle {
@@ -27,25 +52,19 @@ html {
     border-radius: 5px;
     font-size: 1.25em;
 }
-#buttonpers {
-	position: absolute;
-    top: 350%;
-    left: 33%;
 
-}
-#buttonpro {
-	position: absolute;
-    top: 350%;
-    left: 66%;
-}
 </style>
 </head>
 <body>
+<main class="col-12 page">
 <div class="maintitle">
 <h1>CONG 101</h1>
 <h2>A (Very) Brief Intro to Corwan Groux</h2>
 </div>
-<a class="button1" id="buttonpers" href="person.html">The Person</a>
-<a class="button1" id="buttonpro" href="professional.html">The Professional</a>
+<div>
+<a class="button1 col-6" id="buttonpers" href="person.html">The Person</a>
+<a class="button1 col-6" id="buttonpro" href="professional.html">The Professional</a>
+</div>
+</main>
 </body>
 </html>
