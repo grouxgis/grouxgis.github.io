@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-#rcorners1 {
-  border-radius: 25px;
-  background: #73AD21;
-  padding: 20px; 
-  width: 200px;
-  height: 150px;  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html {
+	background-image: url("GeorgianBay2.JPG");
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 1920px 1280px;
+	margin: auto;
 }
-
-#rcorners2 {
-  border-radius: 25px;
-  border: 2px solid #73AD21;
-  padding: 20px; 
-  width: 200px;
-  height: 150px;  
+.maintitle {
+    background-color: darkred;
+    padding: 1px;
+    margin: auto;
+    color: floralwhite;
+    text-align: center;
+    border-radius: 24px;
+    width: 450px;
 }
+.button1 {
+    background-color: darkgoldenrod;
+	color: floralwhite;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.25em;
+}
+#buttonpers {
+	position: absolute;
+    top: 350%;
+    left: 33%;
 
-#rcorners3 {
-  border-radius: 25px;
-  background: url(https://www.w3schools.com/html/img_chania.jpg);
-  background-position: left top;
-  background-repeat: repeat;
-  padding: 20px; 
-  width: 200px;
-  height: 150px;  
+}
+#buttonpro {
+	position: absolute;
+    top: 350%;
+    left: 66%;
 }
 </style>
 </head>
 <body>
-
-<h1>The border-radius Property</h1>
-
-<p>Rounded corners for an element with a specified background color:</p>
-<p id="rcorners1">Rounded corners!</p>
-<p>Rounded corners for an element with a border:</p>
-<p id="rcorners2">Rounded corners!</p>
-<p>Rounded corners for an element with a background image:</p>
-<div id="rcorners3"></div>
-
+<div class="maintitle">
+<h1>CONG 101</h1>
+<h2>A (Very) Brief Intro to Corwan Groux</h2>
+</div>
+<a class="button1" id="buttonpers" href="person.html">The Person</a>
+<a class="button1" id="buttonpro" href="professional.html">The Professional</a>
 </body>
 </html>
