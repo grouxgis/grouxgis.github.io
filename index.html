@@ -7,65 +7,83 @@
 	box-sizing: border-box;
 }
 
-/* Taken from https://www.w3schools.com/css/css_rwd_grid.asp */
+/* Combined from https://www.w3schools.com/css/css_rwd_grid.asp and https://www.w3schools.com/css/css_rwd_mediaqueries.asp  */
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
+  width: 100%;
 }
 
-/* Taken from https://www.w3schools.com/css/css_rwd_grid.asp */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
-.page {
+html {
 	background-image: url("images/GeorgianBay.JPG");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 90% 66%;
-	height: 900px;
+	background-position: 75% 50%;
+	height: 100%;
 	margin: auto;
+}
+#titlebox {
+	padding: 15px 16.66% 15px;
 }
 .maintitle {
     background-color: darkred;
-    padding: 1px;
-    margin: auto;
+	margin-top: 15px;
+    margin-bottom: 15px;
     color: floralwhite;
     text-align: center;
     border-radius: 24px;
     width: 450px;
 }
+#entrance {
+	padding: 15px;
+}
+button {
+	background-color: transparent;
+	border-style: none;
+}
 .button1 {
+	margin-bottom: 15px;
     background-color: darkgoldenrod;
 	color: floralwhite;
+	text-align: center;
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.25em;
 }
 
+/* Taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+@media only screen and (min-width: 768px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
 </style>
 </head>
 <body>
-<main class="col-12 page">
-<div class="maintitle">
-<h1>CONG 101</h1>
-<h2>A (Very) Brief Intro to Corwan Groux</h2>
+<div id="titlebox">
+	<div class="maintitle col-12">
+		<h1>CONG 101</h1>
+		<h2>A (Very) Brief Intro to Corwan Groux</h2>
+	</div>
 </div>
-<div>
-<a class="button1 col-6" id="buttonpers" href="person.html">The Person</a>
-<a class="button1 col-6" id="buttonpro" href="professional.html">The Professional</a>
+<div id="entrance">
+	<button class="col-6" id="buttonleft">
+		<a class="button1" href="person.html">The Person</a>
+	</button>
+	<button class="col-6" id="buttonright">
+		<a class="button1" href="professional.html">The Professional</a>
+	</button>
 </div>
-</main>
 </body>
 </html>
