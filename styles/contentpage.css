@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Combined from https://www.w3schools.com/css/css_rwd_grid.asp and https://www.w3schools.com/css/css_rwd_mediaqueries.asp  */
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  width: 100%;
+}
+/* Styles for the index page */
+html.home {
+	font-family: Verdana, sans-serif;
+	background-image: url("../images/GeorgianBay.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 75% 50%;
+	height: 100%;
+	margin: auto;
+}
+
+.maintitle {
+    background-color: #994d33;
+	margin-bottom: 10em;
+	padding: 10px;
+    color: floralwhite;
+    text-align: center;
+    border-radius: 24px;
+}
+
+button {
+	background-color: transparent;
+	border-style: none;
+	margin-bottom: 10%;
+}
+.button1 {
+    background-color: #ac7339;
+	color: floralwhite;
+	text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.75em;
+}
+
+/* Styles for the content pages */
+html.sitecontent {
+	background-color: #f2e6d9;
+	font-family: Verdana, sans-serif;
+}
+
+header {
+	background-color: #86592d;
+}
+
+header h1 {
+	padding: 10px;
+	margin: 0em;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	background-color: #ac7339;
+	height: auto;
+}
+
+ul.suplist {
+	padding: 0px
+}
+
+ul.sublist {
+	padding-inline-start: 1.5em;
+}
+
+nav li {
+	list-style-type: none;
+	margin: 0.5em;
+	padding: 0.5em;
+	background-color: #dfbf9f;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+p {
+	text-indent: 2em;
+	font-size: 12pt;
+}
+
+ul.hidden {
+	display: none;
+}
+
+.photos {
+	padding: 1	vw;
+	height: 100%;
+	width: 100%;
+	max-width: 600px;
+	max-height: 600px;
+}
+	
+
+/* Taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp The formatting of classes other than the columns is my own addition. */
+@media only screen and (min-width: 768px) {
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+	.maintitle {
+		margin: 15em 25vw 10em;
+	}
+	.photos {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	.maintitle {margin: 15em 25vw 10em;}
+	.photos {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	.maintitle {
+			margin: 15em 35vw 10em;
+		}
+	.photos {
+		display: inline;
+		padding: 10px;
+		margin: 0px;
+	}
+}
