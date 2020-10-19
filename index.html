@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html class="home">
+<html lang="en" class="home">
 <head>
+<title>Welcome Page</title>
 <link rel="stylesheet" href="styles/contentpage.css">
+<!-- Source for the character encoding meta tag: https://www.w3.org/International/questions/qa-html-encoding-declarations -->
+<meta charset="utf-8">
+<!-- The meta tag comes from https://www.w3schools.com/css/css_rwd_viewport.asp -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<!-- The idea for the layout of this welcome page, with a large background image and buttons to enter the website, were inspired by my professor's website: http://johnbonnett.com/ -->
 <body>
 <div class="maintitle">
 	<h1>Corwan Groux</h1>
 </div>
 <div>
-	<button class="col-6">
-		<a class="button1" href="person.html">The Person</a>
-	</button>
-	<button class="col-6">
-		<a class="button1" href="professional.html">The Professional</a>
-	</button>
+	<div class="col-6 buttonbox">
+		<a class="button" href="person.html">The Person</a>
+	</div>
+	<div class="col-6 buttonbox">
+		<a class="button" href="professional.html">The Professional</a>
+	</div>
 </div>
 </body>
 </html>
