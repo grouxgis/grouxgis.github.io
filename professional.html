@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html class="sitecontent">
+<html lang="en" class="sitecontent">
 <head>
+<title>Professional Interests</title>
 <link rel="stylesheet" href="styles/contentpage.css">
+<!-- Source for the character encoding meta tag: https://www.w3.org/International/questions/qa-html-encoding-declarations -->
+<meta charset="utf-8">
+<!-- The viewport meta tag comes from https://www.w3schools.com/css/css_rwd_viewport.asp -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -9,26 +13,30 @@
 	<h1>The Professional</h1>
 	<h3>'This article is a stub. You can help expand it by hiring me.'</h3>
 </header>
-<section class="row">
+<div class="row">
 	<nav class="col-3">
-		<ul>
+		<ul class="suplist">
+			<!-- The idea to create links to anchors inside a page came from in-class demonstrations of the Fleming College GIS Specialist webpage at https://flemingcollege.ca/programs/geographic-information-systems-applications-specialist-online -->
 			<li><a href="person.html">Personal Interests</a></li>
-			<ul class="hidden sublist">
-				<li>Books</li>
-				<li>Cooking</li>
-				<li>Nature</li>
-			</ul>
+				<li class="sublist"><a href="person.html#bio">Bio</a></li>
+				<li class="sublist"><a href="person.html#books">Books</a></li>
+				<li class="sublist"><a href="person.html#cuisine">Cuisine</a></li>
+				<li class="sublist"><a href="person.html#nature">Nature</a></li>
 			<li><a href="professional.html">Professional Interests</a></li>
-			<ul class="sublist">
-				<li>Silk Roads</li>
-				<li>History of China</li>
-				<li>Spatial Humanities</li>
-			</ul>				
+				<li class="sublist"><a href="#silkroads">China & the Silk Roads</a></li>
+				<li class="sublist"><a href="#digitalhumanities">Digital Humanities</a></li>				
 		</ul>
 	</nav>
 	<article class="col-9">
-		<h2>Silk Roads</h2>
+		<h2 id="silkroads">History of China & the Silk Roads</h2>
+		<p>The Silk Roads is a challenging topic for me as a historian, because its legend fascinates me as a person. As a historical construct, however, it presents numerous problems. Where were these roads? Who was travelling on them? When did they start doing so, and when did they stop? In both cases, why?</p>
+		<p>It turns out that solid answers to these questions are difficult to come by, leaving one with the impression that the Silk Roads are little more than a desert mirage, shimmering tantalizingly in the distance but never truly graspable no matter how much you approach it. That frustration is what prompted me to trace the origins of the Silk Roads both historically and historiographically in my Masters research project. Here's what the paper abstract says:</p>
+		<blockquote>The men who invented the Silk Road were deeply influenced by 19th century imperial struggles, and they claimed it began when the Han dynasty sought to trade with the West. Historians have reinforced this narrative by arguing that Han foreign relations were driven by tributary trade, but I argue that the traditional Silk Roads narrative masks the patrimonial character of Han foreign diplomacy, which simply sought to increase Han imperial power. In conclusion, the traditional Silk Roads narrative is deeply flawed and must either be heavily revised or abandoned altogether.</blockquote>
+		<p>Okay, so maybe it's not the best abstract if you don't already know what I'm talking about.</p>
+		<h2 id="digitalhumanities">Digital Humanities</h2>
+		<p>My first introduction to the digital humanities came in the 2nd year of my undergrad, when I took a course on historical GIS. The course was spread out over two semesters. In the first, we learned the rudiments of ArcGIS desktop and were briefly introduced to how GIS and a few other digital tools were being applied to history. In the second semester, we set out to create, from scratch, a historical geodatabase for the town of Welland in the early 20th century and use it to learn something useful.</p>
+		<p>Our goal was to digitize the 1901 and 1911 censuses, the phone directory, and a set of fire insurance plans for the whole town. Every week we'd spend 8-10 hours minimum poring over grainy images of old documents with handwriting of various degrees of legibility, copying it over into an Excel spreadsheet (not a proper database, I know!). It was time-consuming, monotonous work, and yet - I enjoyed it. I was good at it too, especially deciphering the handwriting (probably because I write in cursive too).</p>
 	</article>
-</section>
+</div>
 </body>
 </html>
