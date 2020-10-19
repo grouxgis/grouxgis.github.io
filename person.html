@@ -1,46 +1,71 @@
 <!DOCTYPE html>
-<html class="sitecontent">
+<html lang="en" class="sitecontent">
 <head>
+<title>Personal Interests</title>
 <link rel="stylesheet" href="styles/contentpage.css">
+<!-- Source for the character encoding meta tag: https://www.w3.org/International/questions/qa-html-encoding-declarations -->
+<meta charset="utf-8">
+<!-- The meta tag comes from https://www.w3schools.com/css/css_rwd_viewport.asp -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
 	<h1>The Person</h1>
-	<h3>Who I am & the things I love</h3>
+	<h3>Who I am through the things I love</h3>
 </header>
 <div class="row">
 	<nav class="col-3">
 		<ul class="suplist">
+			<!-- The idea to create links to anchors inside a page came from in-class demonstrations of the Fleming College GIS Specialist webpage at https://flemingcollege.ca/programs/geographic-information-systems-applications-specialist-online -->
 			<li><a href="person.html">Personal Interests</a></li>
-			<ul class="sublist">
-				<li><a href="#bio">Bio</a></li>
-				<li><a href="#books">Books</a></li>
-				<li><a href="#cuisine">Cuisine</a></li>
-				<li><a href="#nature">Nature</a></li>
-			</ul>
+				<li class="sublist"><a href="#bio">Bio</a></li>
+				<li class="sublist"><a href="#books">Books</a></li>
+				<li class="sublist"><a href="#cooking">Cooking</a></li>
+				<li class="sublist"><a href="#nature">Nature</a></li>
 			<li><a href="professional.html">Professional Interests</a></li>
-			<ul class="hidden sublist">
-				<li>Silk Roads</li>
-				<li>History of China</li>
-				<li>Spatial Humanities</li>
-			</ul>				
+				<li class="sublist"><a href="professional.html#silkroads">China & the Silk Roads</a></li>
+				<li class="sublist"><a href="professional.html#digitalhumanities">Digital Humanities</a></li>				
 		</ul>
 	</nav>
 	<article class="col-9">
 		<h2 id="bio">A very brief biography</h2>
-			<p>I was born and grew up in anglophone Ontario, but both my parents were French, so I grew up bilingual</p>
+			<!-- I learned to use the title attribute to display tooltip descriptions via https://www.computerhope.com/issues/ch001076.htm#:~:text=Firefox%2C%20Chrome%2C%20and%20other%20browsers,on%20hovering%20over%20the%20image. -->
+			<img class="photos" src="images/portrait.jpg" alt="A short break during a hike in Taiwan." title="A short break during a hike in Taiwan.">
+			<!-- Using span elements to specify the language of individual scattered phrases not contained within their own element comes from the W3 consortium's website: https://www.w3.org/International/questions/qa-html-language-declarations -->
+			<p>Welcome! <span lang="fr">Bienvenue! </span><span lang="zh-Hant">歡迎！</span> I was born and grew up in anglophone Ontario, but both my parents were French, so I grew up bilingual. Most of my childhood was spent with my nose in a book (more on that shortly), but not all my adventures were confined to the realm of imagination. Some of my fondest memories come from our frequent family trips, which took me to almost every single Canadian province (sorry, PEI!). Every few years, we'd also go back to France to visit our family there.</p>
+			<p>My adult life has been fairly adventurous, taking me to various places around Canada and the world. I did my undergraduate degrees in History and Economics at Brock University, where I was fortunate enough to get the chance to go on an underwater archaeological dig in Turkey. It turns out scuba diving is less magical when you're constantly enshrouded by a thick cloud of silt, but it was a hugely enriching experience.</p>
+			<p>Post-graduation I spent a summer working as a historic interpreter at the old Hat Creek roadhouse in British Columbia, which (thanks to its isolation) had to most enchanting night skies I've yet had the pleasure to sleep under. The next stage in my life began when I moved to Montreal to do my Masters degree in History at McGill. Montreal was the first major city I'd ever lived in, and it proved less disorienting than I'd feared. Though I did often miss the peaceful quiet of places like Hat Creek or my hometown, delicious food from Montreal's famed food markets offered some compensation (and there's always Mount Royal if you need an escape).</p>
+			<p>My biggest adventure of all was also the most recent one, when I took advantage of a scholarship program to move to Taiwan and learn Mandarin Chinese properly. Even though I theoretically knew enough Mandarin when I landed to navigate around basic things, actually putting that knowledge into practice was an entirely different challenge, without even accounting for cultural barriers. Fortunately, Taiwan is an amazingly hospitable country, and people will often go out of their way to help you out. Taipei itself was a very different kind of city compared to Montreal, but there I learned the wonders of world-class public transportation.</p>
+			<p>Finally, I love all animals equally, but cats are the most equal of all.</p>
 		<h2 id="books">A longstanding love of books</h2>
-			<p>Normally, parents celebrate if their child loves reading. Mine did too, until they started getting calls from teachers about me reading in class. Every day, I waged a silent struggle with the teachers. They would notice me reading and confiscate my book; I learned to come prepared and brought multiple books to school. Needless to say, the teachers were not pleased.</p>
-			<p>My favourite genres have always been a blend of mythology, historical and fantasy books, with science-fiction finding a place on my bookshelves in early adolescence.</p>
-		<h2 id="cuisine">Cuisine</h2>
+			<img class="photos" src="images/bookshelf.jpg" alt="A shelf covered in books." title="A shelf covered in books.">
+			<p>Normally, parents celebrate if their child loves reading. Mine did too, until they started getting calls from teachers about me reading in class. Every day, the same struggle would play out between my teachers and I. They would notice me reading in class and confiscate my book, but I learned to come prepared and regularly brought multiple books to school. Needless to say, the teachers were not pleased.</p>
+			<p>My propensity to read when I was supposed to be doing other things aside, my parents, both readers themselves, did plenty to encourage me. My favourite genres have always been a blend of mythology, historical and fantasy books, but in early adolescence my dad began sharing his passion for science-fiction with me, and the likes of Arthur C. Clarke soon found a place on my bookshelves. High school also saw my reading repertoire expand to include manga, beginning with the classic series <i>Fullmetal Alchemist</i> by Hiromu Arakawa. Below you'll find a short collection of my favourite works and authors:</p>
+			<ul>
+				<li>As a child I loved the abridged version of <i>Le Comte de Monte-Cristo</i> by <b>Alexandre Dumas</b>, and returning to it as an adult and reading the original was a special pleasure.</li>
+				<li>Pretty much everything written by <b>Tamora Pierce</b>, who wrote several of my favourite childhood fantasy series, such as <i>Protector of the Small</i> and <i>The Circle of Magic</i>. Best of all, her stories aren't the kind that you outgrow and remain a pleasure to re-read even now.</li>
+				<li>Idem for Canadian author <b>Guy Gavriel Kay</b>, whose stories weave mundane (and not-so-mundane) characters into the rich tapestry of history. His novels bring to life some of history's most fascinating moments, such as the Byzantine empire under Justinian (<i>The Sarantine Mosaic</i>) or the Tang dynasty at its apogee just prior to the An Lushan rebellion (<i>Under Heaven</i>).</li>
+				<li>In the realm of manga, one of my absolute favourites works is <b>Kaoru Mori</b>'s vivid rendition of 19th century Central Asia in <i>A Bride's Story</i>. The artwork is breathtaking in its detail, and the clothes that the characters wear are to die for. So much gorgeous embroidery everywhere. Why don't we get clothes like that anymore?</li>
+				<li>For some fantasy that's not your old sword & sorcery story, check out <b>N.K. Jemisin</b>, especially her <i>Broken Earth</i> trilogy. Her characters are all profoundly human, and we get to follow them through their messy lives and often banally human concerns, except with gods, powerful magic, and/or imminent apocalypses thrown into the mix. I'm doing a terrible job of doing her justice here, so just go read her books for yourself.</li>
+				<li>And finally for a novel that I really hopes gets a translation someday: <span lang="zh-Hant">獅頭花</span> by <b><span lang="zh-Hant">陳耀昌</span></b> (<b>Chen Yaochang</b>), a historical novel from Taiwan. Set in southern Taiwan in 1875, the story recounts the challenges faced by the independent indigenous Tjakuvukuvulj confederation when both imperial Japan and the Qing dynasty in China were trying to expand their influence on the island. The historical incidents depicted in the novel do a great job of illustrating some of Taiwan's complex history, and offer good context to understand the island country's peculiar position today. I hope more people get to learn about Taiwan's complex colonial history.</li>
+			</ul>
+			<p>The list could go on for much longer, but then it wouldn't be a short collection anymore.</p>
+		<h2 id="cooking">An early start in the kitchen</h2>
+			<img class="photos" src="images/cuisine.jpg" alt="Making crêpes at my Grandma's house." title="Making crêpes at my Grandma's house.">
+			<p>My first introduction to cooking came for a simple reason: I wanted to make my favourite food, crêpes. Simple but time-consuming to make in large quantities, it was an excellent way to get started and help my mom out on holidays. Later on I'd get the chance to further polish my crêpe-making skills during visits to my grandmother in France, one of the few activities we could truly enjoy together.</p>
+			<p>For several years as a kid, I just stuck to occasionally making delicious crêpes, but that changed in high school when everyone else in my family became too busy to cook in the evenings. My parents had work and my sister had club activities, so I became the new family chef. Those were the years when I first discovered the many possibilities offered by using spices, and like most beginners I may have at times been overenthusiastic in sprinkling them into the dishes. Nonetheless, I learned how tasty a meal could be when I cooked it just the was <em>I</em> liked it. As an extremely picky eater, being able to cook for myself meant no longer being afraid of what I'd find hidden in the sauce.</p>
+			<p>Over the course of my adult years, I've been working on slowly expanding my culinary repertoire - more of a challenge than you'd think given the limitations of all the things I don't like. Crêpes still remain my signature dish, though, and that will likely never change.</p>
 		<h2 id="nature">Nature & the Outdoors</h2>
+			<p>Despite being a bookworm at heart, generally quite content to spend days at a time in my room, I always enjoyed our frequent camping trips as a kid, not to mention growing up in the countryside. After reading about so many adventures, it was always nice to go on one of my own for a change. Many of those trips were to the celebrated Algonquin Provincial Park, though we also explored many others of Ontario's numerous provincial parks. We'd emerge from the coziness of our RV each morning to explore the park by hiking or biking its trails, or by canoeing its waterways, before ending each day with a campfire.</p>
+			<p>One year, I had a chance to go camping in a less luxurious fashion for a change. My best friend invited me to go backcountry camping with his family in Algonquin, at a campsite accessible only via many hours of portage and paddling. It was quite chilly, since this was during March break, but our sleeping bags were warm and cozy. During the days, we'd fish for our dinner - or try to! My friend and I didn't catch a single fish the whole week (I'd never fished before), but fortunately the others were better fishermen than us. The taste of fresh-caught wild fish grilled over a fire was a special delight to end each day with.</p>
+			<p>Over the years, I've had to good fortune to explore a few different landscapes. My favourite landscapes often share 3 elements: forests, bare rock, and water. The Canadian Shield in northern Ontario, mountainous BC and the snowy peaks of Hokkaido in northern Japan are all some my favourite landscapes that I've visited, and places like Iceland and Norway are right at the top of my travel list.</p>
+			<p>Most recently, after several years of life in the city, I've also started to appreciate urban green spaces more than I did before. Getting out of the noise and chaos of the busy streets and finding some peace and quiet (not to mention fresh air) in parks and gardens did wonders for my sanity in both Montreal and Taipei. Montreal's Botanical Garden and its collection of lilacs in particular were a special joy when I was writing my Masters research paper and spending whole weeks locked up in my room.</p>
 	</article>
 </div>
 <div class="col-12">
-	<img class="photos" src="images/portrait.jpg" alt="A short break during a hike in Taiwan.">
-	<img class="photos" src="images/bookshelf.JPG" alt="A shelf covered in books.">
-	<img class="photos" src="images/cuisine.JPG" alt="Making crêpes at my Grandma's house.">
+	<img class="photos" src="images/taipei.jpg" alt="View from my apartment in Taipei." title="View from my apartment in Taipei.">
+	<img class="photos" src="images/lakesuperior.jpg" alt="The breathtaking landscape of northern Ontario." title="The breathtaking landscape of northern Ontario.">
+	<img class="photos" src="images/taiga.jpg" alt="My lovely cat Taiga." title="Bonus pic of my lovely cat Taiga.">
 </div>
 </body>
 </html>
