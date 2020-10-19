@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 }
 
+/* Taken from https://www.w3schools.com/css/css_rwd_grid.asp to ensure the columns for responsive design work properly */
 .row::after {
   content: "";
   clear: both;
@@ -14,9 +15,13 @@
   padding: 10px;
   width: 100%;
 }
+
+html {
+	font-family: Verdana, sans-serif;
+}
+
 /* Styles for the index page */
 html.home {
-	font-family: Verdana, sans-serif;
 	background-image: url("../images/GeorgianBay.JPG");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -25,114 +30,159 @@ html.home {
 	margin: auto;
 }
 
+/* Styles the box for the maintitle class */
 .maintitle {
     background-color: #994d33;
 	margin-bottom: 10em;
 	padding: 10px;
-    color: floralwhite;
-    text-align: center;
     border-radius: 24px;
 }
 
-button {
+/* Styles the text for h1 inside div.maintitle */
+div.maintitle h1 {
+	color: #f2e6d9;
+    text-align: center;
+	font-size: 2.5em;
+}
+
+/* Styles the buttons containing links to the content pages */
+.buttonbox {
 	background-color: transparent;
 	border-style: none;
 	margin-bottom: 10%;
 }
-.button1 {
+
+/* Styles the links to the content pages */
+.button {
+	display: block;
+	margin-left: 15vw;
+	margin-right: 15vw;
     background-color: #ac7339;
-	color: floralwhite;
+	color: #f2e6d9;
 	text-align: center;
     padding: 0.5em;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.75em;
+    font-size: 1.33em;
 }
 
 /* Styles for the content pages */
 html.sitecontent {
 	background-color: #f2e6d9;
-	font-family: Verdana, sans-serif;
 }
 
 header {
 	background-color: #86592d;
+	margin-bottom: 5px;
 }
 
 header h1 {
 	padding: 10px;
 	margin: 0em;
+	color: #dec0a0;
+	text-align: center;
 }
 
+header h3 {
+	padding: 10px;
+	margin: 0em;
+	color: #d1a77a;
+	text-align: center;
+}
+
+/* Styles for the navigation bar */
 nav {
-	position: sticky;
-	top: 0;
 	background-color: #ac7339;
-	height: auto;
+	height: 100%	;
 }
 
-ul.suplist {
-	padding: 0px
-}
-
-ul.sublist {
-	padding-inline-start: 1.5em;
+ul {
+	padding: 5px
 }
 
 nav li {
 	list-style-type: none;
-	margin: 0.5em;
+	margin: 0.75em;
 	padding: 0.5em;
 	background-color: #dfbf9f;
 }
 
-a {
-	text-decoration: none;
+li.sublist {
+	margin-left: 2.5em
 }
 
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #a9753d;
+	width: auto;
+}
+
+/* Styles for the page content (text and images) */
+h2 {
+	color: #5e4122;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
 
 p {
 	text-indent: 2em;
 	font-size: 12pt;
+	color: #5e4122;
 }
 
-ul.hidden {
-	display: none;
+article li {
+	margin-left: 1em;
+	padding: 2px;
+	text-indent: 2em;
+	font-size: 12pt;
+	color: #5e4122;
 }
 
 .photos {
-	padding: 1	vw;
+	padding: 1vw;
 	height: 100%;
 	width: 100%;
 	max-width: 600px;
 	max-height: 600px;
+	border-radius: 150px;
 }
 	
 
 /* Taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp The formatting of classes other than the columns is my own addition. */
+/* Styles for small devices (phones and narrow tablets) */
 @media only screen and (min-width: 768px) {
-	.col-s-1 {width: 8.33%;}
-	.col-s-2 {width: 16.66%;}
-	.col-s-3 {width: 25%;}
-	.col-s-4 {width: 33.33%;}
-	.col-s-5 {width: 41.66%;}
-	.col-s-6 {width: 50%;}
-	.col-s-7 {width: 58.33%;}
-	.col-s-8 {width: 66.66%;}
-	.col-s-9 {width: 75%;}
-	.col-s-10 {width: 83.33%;}
-	.col-s-11 {width: 91.66%;}
-	.col-s-12 {width: 100%;}
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
 	.maintitle {
 		margin: 15em 25vw 10em;
+	}
+	.button {
+		margin-left: 25%;
+	margin-right: 25%;
 	}
 	.photos {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
+	nav {
+		position: sticky;
+		top: 0;
+	}
 }
 
+/* Style tweaks for medium screen sizes */
 @media only screen and (min-width: 992px) {
 	.col-1 {width: 8.33%;}
 	.col-2 {width: 16.66%;}
@@ -154,6 +204,7 @@ ul.hidden {
 	}
 }
 
+/* Style tweaks for wider screen sizes */
 @media only screen and (min-width: 1200px) {
 	.col-1 {width: 8.33%;}
 	.col-2 {width: 16.66%;}
@@ -170,9 +221,14 @@ ul.hidden {
 	.maintitle {
 			margin: 15em 35vw 10em;
 		}
+	.button {
+		margin-left: 33%;
+	margin-right: 33%;
+	}	
 	.photos {
 		display: inline;
 		padding: 10px;
 		margin: 0px;
+		float: right;
 	}
 }
