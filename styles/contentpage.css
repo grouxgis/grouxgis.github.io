@@ -22,7 +22,7 @@ html {
 
 /* Styles for the index page */
 html.home {
-	background-image: url("../images/GeorgianBay.JPG");
+	background-image: url("../images/GeorgianBay.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 75% 50%;
