@@ -41,3 +41,8 @@ https://github.com/HCN-Digital-Projects/landgrabu-data
 
 Taiwan Atlas & Projection:
 https://github.com/dkaoster/taiwan-atlas
+
+## Cool Stuff:
+
+Priestley Time Charts:
+https://pages.uoregon.edu/infographics/dev/timelineV2/pages/index.html
